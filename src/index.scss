@@ -1,0 +1,119 @@
+$primary_color:#0918e5;
+$accent_color: #55b7f4;
+$bg_color: #fff;
+$bg-accent: #e7e8e9;
+$bg-disable_color: #9c9c9c;
+$foreground_color: #2d264b;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: monospace;
+    background: linear-gradient(0deg, $primary_color 0.03%, $accent_color);
+    color: $foreground_color;
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    padding: 0 30px;
+    height: 100vh;
+}
+
+.quizz-container {
+    width: 500px;
+    background: $bg_color;
+    border-radius:  4px;
+    margin-top:  100px;
+    padding: 30px 60px;
+
+    .active-question-no{
+        font-size: 32px;
+        font-weight: 500;
+        color: $primary_color;
+    }
+    
+    .total-questions{
+        font-size: 16px;
+        font-weight: 500;
+        color: $bg-disable_color;
+    }
+    
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    
+    .logo-container{
+        display: flex;
+        align-items: end;
+        background-color: $accent_color;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .logo-container > h1 {
+        color: #fff;
+    }
+    
+    
+    li {
+        text-decoration: none;
+        list-style: none;
+        color: $foreground_color;
+        font-size: 16px;
+        background: $bg_color;
+        border: 1px solid $bg-disable_color;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .selected-answer {
+        background: $primary_color;
+        border: 1px solid $bg-accent;
+        color: #fff;
+    }
+    .footer {
+        display: flex;
+        justify-content: end;
+    }
+    button {
+        background: linear-gradient(0deg, $primary_color 0.03%, $accent_color);
+        color: #fff;
+        font-size: 18px;
+        padding: 10px 30px;
+        border-radius: 10px ;
+        border: none;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    button:disabled {
+        background: $bg-disable_color;
+        color: $bg-accent;
+        cursor: not-allowed;
+    }
+
+    .result{
+        margin: 30px 0;
+    }
+
+    h3{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 18px;
+        margin: 10px 0;
+        color: $foreground_color;
+
+    }
+}
+
+
+
